@@ -1,0 +1,12 @@
+[package]
+name = "integration-tests"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Direct link to WAMR engine for managing test runtimes
+postcard = { version = "1.0", features = ["use-std"] }
+
+# Workspace Internal Packages
+webserver = { path = "../webserver" }
+plugin-abi = { path = "../plugin-abi" }

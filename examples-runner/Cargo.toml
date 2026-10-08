@@ -1,0 +1,12 @@
+[package]
+name = "examples-runner"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Direct Git configuration tracking
+postcard = { version = "1.0", features = ["use-std"] }
+
+# Local workspace orchestration targets
+webserver = { path = "../webserver" }
+plugin-abi = { path = "../plugin-abi" }

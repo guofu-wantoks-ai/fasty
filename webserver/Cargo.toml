@@ -1,0 +1,23 @@
+[package]
+name = "webserver"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# 100% Pure-Rust Async Web Ecosystem (Latest Stable Versions)
+tokio = { version = "1.53.2", features = ["full"] }
+axum = { version = "0.8.9", features = ["ws"] } 
+
+
+# FIX: Change "compression" to "compression-full" 
+tower-http = { version = "0.7.1", features = ["fs", "trace", "cors", "compression-full"] }
+
+# High-Performance Binary Serialization (Serde Ecosystem)
+serde = { version = "1.0", features = ["derive"] }
+postcard = { version = "1.0.10", features = ["use-std"] }
+
+# 100% Pure-Rust WebAssembly Sandbox Interpreter (Latest Stable Major v2 Ecosystem)
+wasmi = "2.0.0"
+
+# Workspace Internal Component Link
+plugin-abi = { path = "../plugin-abi" }
