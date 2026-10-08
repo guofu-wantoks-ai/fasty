@@ -294,9 +294,8 @@ dependencies = [
 name = "examples-runner"
 version = "0.1.0"
 dependencies = [
- "plugin-abi",
+ "plugin-sdk",
  "postcard",
- "webserver",
 ]
 
 [[package]]
@@ -532,9 +531,8 @@ dependencies = [
 name = "integration-tests"
 version = "0.1.0"
 dependencies = [
- "plugin-abi",
+ "plugin-sdk",
  "postcard",
- "webserver",
 ]
 
 [[package]]
@@ -681,10 +679,6 @@ name = "pkg-config"
 version = "0.3.34"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f6b464fbc74e149a392436b17d523f769e057cb6877f6a5c4618bc6f11800548"
-
-[[package]]
-name = "plugin-abi"
-version = "0.1.0"
 
 [[package]]
 name = "plugin-sdk"
@@ -1288,7 +1282,7 @@ name = "webserver"
 version = "0.1.0"
 dependencies = [
  "axum",
- "plugin-abi",
+ "plugin-sdk",
  "postcard",
  "serde",
  "tokio",

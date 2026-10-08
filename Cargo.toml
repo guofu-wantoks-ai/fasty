@@ -1,7 +1,6 @@
 [workspace]
 members = [
     "plugin-sdk",
-    "plugin-abi",
     "integration-tests",
     "webserver", 
     "examples-runner",

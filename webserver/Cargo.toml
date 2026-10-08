@@ -20,4 +20,4 @@ postcard = { version = "1.0.10", features = ["use-std"] }
 wasmi = "2.0.0"
 
 # Workspace Internal Component Link
-plugin-abi = { path = "../plugin-abi" }
+plugin-sdk = { path = "../plugin-sdk" }

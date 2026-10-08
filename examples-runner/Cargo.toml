@@ -8,5 +8,4 @@ edition = "2021"
 postcard = { version = "1.0", features = ["use-std"] }
 
 # Local workspace orchestration targets
-webserver = { path = "../webserver" }
-plugin-abi = { path = "../plugin-abi" }
+plugin-sdk = { path = "../plugin-sdk" }
